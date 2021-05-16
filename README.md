@@ -1,3 +1,6 @@
+# Project hosted on Github Pages
+[Link](http://tunaphish.github.io/queen-workout/)
+
 ## Available Scripts
 
 In the project directory, you can run:
