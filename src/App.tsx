@@ -1,8 +1,11 @@
 import 'antd/dist/antd.css';
 import './index.css';
-import { Layout, Button, Space } from 'antd';
+import { Layout } from 'antd';
+import Home from './components/Home'
 
 const { Header, Content } = Layout;
+
+
 
 const App = () => {
   return (
@@ -11,10 +14,7 @@ const App = () => {
       <Header className="header-title">QUEEN WORKOUT</Header>
       <Content>
         <div className="site-layout-content">
-          <Space direction="vertical" align="center">
-            <Button type="primary">Booty Workout Day 1</Button>
-            <Button type="primary" disabled>Booty Workout Day 2</Button>
-          </Space>
+            <Home/>
         </div>
       </Content>
     </Layout>

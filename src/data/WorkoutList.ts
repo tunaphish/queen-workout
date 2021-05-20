@@ -12,6 +12,10 @@ const WorkoutList: Workout[] = [
     {
         name: "Booty Day 1",
         roundList: [roundOne],
+    }, 
+    {
+        name: "Booty Day 1",
+        roundList: [roundOne],
     }
 ]
 
