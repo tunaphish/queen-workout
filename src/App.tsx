@@ -1,25 +1,21 @@
 import 'antd/dist/antd.css';
 import './index.css';
 import { Layout } from 'antd';
-import Home from './components/Home'
+import Home from './components/Home';
 
 const { Header, Content } = Layout;
 
-
-
-const App = () => {
-  return (
-    <div >
+const App = () => (
+  <div>
     <Layout className="layout">
       <Header className="header-title">QUEEN WORKOUT</Header>
       <Content>
         <div className="site-layout-content">
-            <Home/>
+          <Home />
         </div>
       </Content>
     </Layout>
-    </div>
-  );
-}
+  </div>
+);
 
 export default App;

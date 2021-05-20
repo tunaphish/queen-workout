@@ -1,19 +1,15 @@
-import {  Button, Space } from 'antd';
+import { Button, Space } from 'antd';
 
-import WorkoutList from '../data/WorkoutList'
+import WorkoutList from '../data/WorkoutList';
 
-const WorkoutButtons = WorkoutList.map((workout) => {
-    return (
-        <Button key={workout.name}>{workout.name}</Button>
-    )
-})
+const WorkoutButtons = WorkoutList.map((workout) => (
+  <Button key={workout.name}>{workout.name}</Button>
+));
 
-const Home = () => {
-    return (
-        <Space direction="vertical" align="center">
-            {WorkoutButtons}
-        </Space>
-    );
-}
-  
+const Home = () => (
+  <Space direction="vertical" align="center">
+    {WorkoutButtons}
+  </Space>
+);
+
 export default Home;
