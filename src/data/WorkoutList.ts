@@ -8,13 +8,18 @@ const roundOne: Round = {
   sets: [30, 30, 30, 30],
 };
 
+const roundTwo: Round = {
+  exercise: HipThrust,
+  sets: [5, 5],
+};
+
 const WorkoutList: Workout[] = [
   {
     name: 'Booty Day 1',
-    roundList: [roundOne],
+    roundList: [roundOne, roundTwo],
   },
   {
-    name: 'Booty Day 1',
+    name: 'Booty Day 2',
     roundList: [roundOne],
   },
 ];

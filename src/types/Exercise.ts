@@ -1,6 +1,6 @@
 interface Exercise {
-  name: String;
-  video: String;
+  name: string;
+  video: string;
 }
 
 export default Exercise;

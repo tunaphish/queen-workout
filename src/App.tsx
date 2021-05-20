@@ -1,6 +1,8 @@
 import 'antd/dist/antd.css';
 import './index.css';
+
 import { Layout } from 'antd';
+
 import Home from './components/Home';
 
 const { Header, Content } = Layout;
