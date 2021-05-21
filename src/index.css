@@ -1,9 +1,8 @@
-.header-title {
-    color: #ffffff
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.site-layout-content {
-    min-height: 280px;
-    padding: 24px;
-    background: #f0f0f0;
+html, body, main {
+  height: 100%;
 }
