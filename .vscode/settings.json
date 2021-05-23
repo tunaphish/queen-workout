@@ -1,4 +1,9 @@
 {
+  "breadcrumbs.enabled": true,
+  "editor.wordWrap": "on",
+  "editor.fontFamily": "Fira Code",
+
+  
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.formatOnSave": true,
   "eslint.alwaysShowStatus": true,
