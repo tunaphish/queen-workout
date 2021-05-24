@@ -1,47 +1,72 @@
 import Workout from '../types/Workout';
 import Round from '../types/Round';
 
-import { HipThrust } from './Exercises';
+import * as Exercise from './Exercises';
 
-const roundOne: Round = {
-  exercise: HipThrust,
-  sets: [30, 30, 30, 30],
-};
-
-const roundTwo: Round = {
-  exercise: HipThrust,
-  sets: [5, 5],
-};
+const bootyDayOneRounds: Round[] = [
+  {
+    exercise: Exercise.HipThrust,
+    sets: [30, 30, 30],
+  },
+  {
+    exercise: Exercise.FrogPumps,
+    sets: [30, 30, 30],
+  },
+  {
+    exercise: Exercise.SquatWithCalfRaise,
+    sets: [16, 16, 16],
+  },
+  {
+    exercise: Exercise.KneeUpStepBackLunges,
+    sets: [12, 12, 12],
+  },
+  {
+    exercise: Exercise.StaticGluteBridgeActivation,
+    sets: [20, 20, 20],
+  },
+  {
+    exercise: Exercise.DbAroundTheWorldLunges,
+    sets: [10, 10, 10],
+  },
+  {
+    exercise: Exercise.BandedHipAbductors,
+    sets: [30, 30, 30],
+  },
+  {
+    exercise: Exercise.CalfRaises,
+    sets: [60],
+  },
+];
 
 const WorkoutList: Workout[] = [
   {
     name: 'Booty Day 1',
-    roundList: [roundOne, roundTwo],
+    roundList: bootyDayOneRounds,
     image: '/images/wireframe.jpg',
   },
   {
     name: 'Booty Day 2',
-    roundList: [roundOne],
+    roundList: bootyDayOneRounds,
     image: '/images/wireframe.jpg',
   },
   {
     name: 'Booty Day 2',
-    roundList: [roundOne],
+    roundList: bootyDayOneRounds,
     image: '/images/wireframe.jpg',
   },
   {
     name: 'Booty Day 2',
-    roundList: [roundOne],
+    roundList: bootyDayOneRounds,
     image: '/images/wireframe.jpg',
   },
   {
     name: 'Booty Day 2',
-    roundList: [roundOne],
+    roundList: bootyDayOneRounds,
     image: '/images/wireframe.jpg',
   },
   {
     name: 'Booty Day 2',
-    roundList: [roundOne],
+    roundList: bootyDayOneRounds,
     image: '/images/wireframe.jpg',
   },
 ];
