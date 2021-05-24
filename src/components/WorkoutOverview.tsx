@@ -1,24 +1,27 @@
+import styled from 'styled-components';
 import Workout from '../types/Workout';
+import { PrimaryHeading, SecondaryHeading } from './Heading';
+
+const RoundContainer = styled.div`
+  margin: 20px 0 0 0;
+`;
 
 type WorkoutOverviewProps = {
   workout: Workout,
 };
 
-const WorkoutOverview = ({ workout }: WorkoutOverviewProps) => {
-  const ExerciseStats = workout.roundList.map((round) => {
-    const setSchema: string = `Sets: ${round.sets.length} Reps: ${round.sets[0]}`;
-    return (
-      <div>
-        {setSchema}
-      </div>
-    );
-  });
+const ExerciseStats = (workout: Workout) => workout.roundList.map((round) => (
+  <RoundContainer>
+    <SecondaryHeading>{round.exercise.name}</SecondaryHeading>
+    {`${round.sets.length} x ${round.sets[0]}`}
+  </RoundContainer>
+));
 
-  return (
-    <div>
-      {ExerciseStats}
-    </div>
-  );
-};
+const WorkoutOverview = ({ workout }: WorkoutOverviewProps) => (
+  <div>
+    <PrimaryHeading>{workout.name}</PrimaryHeading>
+    {ExerciseStats(workout)}
+  </div>
+);
 
 export default WorkoutOverview;

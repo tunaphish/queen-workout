@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import WorkoutList from '../data/WorkoutList';
-import Heading from './Heading';
+import { PrimaryHeading } from './Heading';
 
 const Container = styled.div`
   display: flex;
@@ -18,7 +18,7 @@ const WorkoutButtons = WorkoutList.map((workout) => (
 
 const Home = () => (
   <>
-    <Heading>Workouts</Heading>
+    <PrimaryHeading>Workouts</PrimaryHeading>
     <Container>
       {WorkoutButtons}
     </Container>

@@ -1,7 +1,10 @@
 import './index.css';
 import styled from 'styled-components';
-import Home from './components/Home';
+// import Home from './components/Home';
 import Phish from './components/Phish';
+import WorkoutOverview from './components/WorkoutOverview';
+
+import workoutList from './data/WorkoutList';
 
 const Header = styled.header`
   background: rgb(239,121,138);
@@ -33,7 +36,7 @@ const Container = styled.div`
 `;
 
 const App = () => (
-  <div>
+  <>
     <Header>
       <CenteredItem>
         <Phish />
@@ -41,10 +44,10 @@ const App = () => (
     </Header>
     <Content>
       <Container>
-        <Home />
+        <WorkoutOverview workout={workoutList[0]} />
       </Container>
     </Content>
-  </div>
+  </>
 );
 
 export default App;
