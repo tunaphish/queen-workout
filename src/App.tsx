@@ -26,9 +26,10 @@ const Content = styled.div`
   margin: 50px 10px 10px 0;
   display: flex;
   justify-content: space-around;
-  > * {
-    max-width: 2048px;
-  }
+`;
+
+const Container = styled.div`
+  max-width: 1200px;
 `;
 
 const App = () => (
@@ -39,7 +40,9 @@ const App = () => (
       </CenteredItem>
     </Header>
     <Content>
-      <Home />
+      <Container>
+        <Home />
+      </Container>
     </Content>
   </div>
 );

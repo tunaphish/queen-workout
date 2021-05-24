@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import WorkoutList from '../data/WorkoutList';
+import Heading from './Heading';
 
 const Container = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 `;
 
@@ -16,9 +17,13 @@ const WorkoutButtons = WorkoutList.map((workout) => (
 ));
 
 const Home = () => (
-  <Container>
-    {WorkoutButtons}
-  </Container>
+  <>
+    <Heading>Workouts</Heading>
+    <Container>
+      {WorkoutButtons}
+    </Container>
+  </>
+
 );
 
 export default Home;
