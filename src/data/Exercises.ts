@@ -2,7 +2,7 @@ import Exercise from '../types/Exercise';
 
 const HipThrust: Exercise = {
   name: 'Hip Thrust',
-  video: 'https://www.instagram.com/p/BW6AKtYgjtS/',
+  video: '/videos/hip-thrusts.mp4',
 };
 
 const FrogPumps: Exercise = {

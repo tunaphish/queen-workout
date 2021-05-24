@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import WorkoutList from '../data/WorkoutList';
-import { PrimaryHeading } from './Heading';
+import { PrimaryHeading } from '../components/Heading';
 
 const Container = styled.div`
   display: flex;

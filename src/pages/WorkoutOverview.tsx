@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Workout from '../types/Workout';
-import { PrimaryHeading, SecondaryHeading } from './Heading';
+import { PrimaryHeading, SecondaryHeading } from '../components/Heading';
 
 const RoundContainer = styled.div`
   margin: 20px 0 0 0;
