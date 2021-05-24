@@ -2,9 +2,9 @@ import './index.css';
 import styled from 'styled-components';
 import Header from './components/Header';
 
-// import Home from './components/Home';
-// import WorkoutOverview from './components/WorkoutOverview';
-import ExerciseDetail from './components/ExerciseDetail';
+// import Home from './pages/Home';
+// import WorkoutOverview from './pages/WorkoutOverview';
+import ExerciseDetail from './pages/ExerciseDetail';
 
 import workoutList from './data/WorkoutList';
 
