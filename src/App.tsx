@@ -22,6 +22,15 @@ const CenteredItem = styled.div`
   color: white;
 `;
 
+const Content = styled.div`
+  margin: 50px 10px 10px 0;
+  display: flex;
+  justify-content: space-around;
+  > * {
+    max-width: 2048px;
+  }
+`;
+
 const App = () => (
   <div>
     <Header>
@@ -29,9 +38,9 @@ const App = () => (
         <Phish />
       </CenteredItem>
     </Header>
-    <div>
+    <Content>
       <Home />
-    </div>
+    </Content>
   </div>
 );
 

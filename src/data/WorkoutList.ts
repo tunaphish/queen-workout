@@ -17,10 +17,32 @@ const WorkoutList: Workout[] = [
   {
     name: 'Booty Day 1',
     roundList: [roundOne, roundTwo],
+    image: '/images/wireframe.jpg',
   },
   {
     name: 'Booty Day 2',
     roundList: [roundOne],
+    image: '/images/wireframe.jpg',
+  },
+  {
+    name: 'Booty Day 2',
+    roundList: [roundOne],
+    image: '/images/wireframe.jpg',
+  },
+  {
+    name: 'Booty Day 2',
+    roundList: [roundOne],
+    image: '/images/wireframe.jpg',
+  },
+  {
+    name: 'Booty Day 2',
+    roundList: [roundOne],
+    image: '/images/wireframe.jpg',
+  },
+  {
+    name: 'Booty Day 2',
+    roundList: [roundOne],
+    image: '/images/wireframe.jpg',
   },
 ];
 
