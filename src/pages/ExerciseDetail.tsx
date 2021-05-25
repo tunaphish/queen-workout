@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import { PrimaryHeading } from '../components/Heading';
 import Round from '../types/Round';
 
+const Container = styled.div`
+  margin: 10px;
+`;
 const Video = styled.video`
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
 `;
 
 type ExerciseDetailProps = {
@@ -15,12 +15,12 @@ type ExerciseDetailProps = {
 };
 
 const ExerciseDetail = ({ round }: ExerciseDetailProps) => (
-  <div>
+  <Container>
     <PrimaryHeading>{round.exercise.name}</PrimaryHeading>
-    <Video autoPlay muted loop>
+    <Video autoPlay muted loop playsInline>
       <source src={process.env.PUBLIC_URL + round.exercise.video} type="video/mp4" />
     </Video>
-  </div>
+  </Container>
 );
 
 export default ExerciseDetail;
