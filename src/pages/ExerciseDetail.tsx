@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link, useParams } from 'react-router-dom';
-import { PrimaryHeading } from '../components/Heading';
+import { PrimaryHeading, SecondaryHeading } from '../components/Heading';
 
 import Workout from '../types/Workout';
 import Round from '../types/Round';
@@ -38,11 +38,11 @@ const ExerciseDetail = () => {
   return (
     <Container>
       <PrimaryHeading>{round.exercise.name}</PrimaryHeading>
-      <Video autoPlay muted loop playsInline>
+      <Video autoPlay muted loop playsInline key={round.exercise.name}>
         <source src={process.env.PUBLIC_URL + round.exercise.video} type="video/mp4" />
       </Video>
+      <SecondaryHeading>{`Reps: ${round.sets[setid]}`}</SecondaryHeading>
       <Link to={nextScreenUrl}>NEXT</Link>
-
     </Container>
   );
 };

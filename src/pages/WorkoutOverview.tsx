@@ -10,7 +10,7 @@ const RoundContainer = styled.div`
 `;
 
 const ExerciseStats = (workout: Workout) => workout.roundList.map((round) => (
-  <RoundContainer>
+  <RoundContainer key={round.exercise.name}>
     <SecondaryHeading>{round.exercise.name}</SecondaryHeading>
     {`${round.sets.length} x ${round.sets[0]}`}
   </RoundContainer>

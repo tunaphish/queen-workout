@@ -7,17 +7,17 @@ const HipThrust: Exercise = {
 
 const FrogPumps: Exercise = {
   name: 'Frog Pumps',
-  video: 'https://www.instagram.com/p/BW6EN7WAbqI/',
+  video: '/videos/frog-pumps.mp4',
 };
 
 const SquatWithCalfRaise: Exercise = {
   name: 'Squat with Calf Raise',
-  video: 'https://www.instagram.com/p/BW6IB6OgUAb/',
+  video: '/videos/squat-with-calf-raise.mp4',
 };
 
 const KneeUpStepBackLunges: Exercise = {
   name: 'Knee Up Step Back Lunges',
-  video: 'https://www.instagram.com/p/BW6XhA-guKR/',
+  video: '/videos/knee-up-step-back-lunges.mp4',
 };
 
 const StaticGluteBridgeActivation: Exercise = {

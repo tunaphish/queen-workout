@@ -16,7 +16,7 @@ const Workout = styled.img`
 `;
 
 const WorkoutButtons = WorkoutList.map((workout, index) => (
-  <Link to={`/workout/${index}`}>
+  <Link to={`/workout/${index}`} key={workout.name}>
     <Workout key={workout.name} alt={workout.name} src={process.env.PUBLIC_URL + workout.image} />
   </Link>
 ));
