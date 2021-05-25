@@ -38,25 +38,22 @@ const bootyDayOneRounds: Round[] = [
   },
 ];
 
+const bootyDayTwoRounds: Round[] = [
+  {
+    exercise: Exercise.HipThrust,
+    sets: [30, 30, 30],
+  },
+];
+
 const WorkoutList: Workout[] = [
   {
     name: 'Booty Day 1',
     roundList: bootyDayOneRounds,
-    image: '/images/wireframe.jpg',
+    image: '/images/booty-day-1.jpg',
   },
   {
     name: 'Booty Day 2',
-    roundList: bootyDayOneRounds,
-    image: '/images/wireframe.jpg',
-  },
-  {
-    name: 'Booty Day 2',
-    roundList: bootyDayOneRounds,
-    image: '/images/wireframe.jpg',
-  },
-  {
-    name: 'Booty Day 2',
-    roundList: bootyDayOneRounds,
+    roundList: bootyDayTwoRounds,
     image: '/images/wireframe.jpg',
   },
   {

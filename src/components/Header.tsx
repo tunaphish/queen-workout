@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import Phish from './Phish';
 
 const StyledHeader = styled.header`
@@ -22,7 +23,9 @@ const CenteredItem = styled.div`
 const Header = () => (
   <StyledHeader>
     <CenteredItem>
-      <Phish />
+      <Link to="/">
+        <Phish />
+      </Link>
     </CenteredItem>
   </StyledHeader>
 
