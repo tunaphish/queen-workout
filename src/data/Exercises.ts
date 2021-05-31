@@ -21,23 +21,23 @@ const KneeUpStepBackLunges: Exercise = {
 };
 
 const StaticGluteBridgeActivation: Exercise = {
-  name: 'Static Glute Bridge Activation',
-  video: 'https://www.instagram.com/p/BiIsLtuA7_t/',
+  name: 'Static Glute Bridge Activation (wrong video)',
+  video: '/videos/banded-hip-abductors.mp4',
 };
 
 const DbAroundTheWorldLunges : Exercise = {
   name: 'Db Around the World Lunges ',
-  video: 'https://www.instagram.com/p/BW3qPxMAV1E/',
+  video: '/videos/db-around-the-world-lunges.mp4',
 };
 
 const BandedHipAbductors : Exercise = {
   name: 'Banded Hip Abductors',
-  video: 'https://www.instagram.com/p/BVgVCeFny7x/',
+  video: '/videos/banded-hip-abductors.mp4',
 };
 
 const CalfRaises : Exercise = {
-  name: 'Calf Raises ',
-  video: 'https://www.instagram.com/p/BW6VHkgAprB/',
+  name: 'Calf Raises',
+  video: '/videos/calf-raises.mp4',
 };
 
 export {
